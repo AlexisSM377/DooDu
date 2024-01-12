@@ -1,0 +1,7 @@
+{
+  "name": "DuoDo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
