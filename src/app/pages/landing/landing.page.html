@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <div class="glass-content">
+    <div class="content-text">
+      <ion-img src="assets/duodo.png" />
+      <div class="flex flex-col space-y-6 text-6xl font-poppins font-bold ml-8 mt-16">
+        <ion-text> <span>Tareas</span><br /> </ion-text>
+        <ion-text> <span>Chats</span><br /> </ion-text>
+        <ion-text> <span>Workspace</span><br /> </ion-text>
+        <ion-text> <span>Teams</span><br /> </ion-text>
+        <ion-icon name="ellipsis-horizontal"></ion-icon>
+      </div>
+    </div>
+    <div class="flex justify-center mt-10">
+      <ion-text [routerLink]="['/login']">
+        <p class="text-center text-3xl font-poppins font-bold bg-indigo-500 p-4 rounded-3xl w-80">Iniciar sesión</p>
+      </ion-text>
+    </div>
+    <div class="flex justify-center mt-4 space-x-2">
+      <div>
+        <ion-text class="text-xl font-poppins font-bold">
+          No tienes cuenta? 
+        </ion-text>
+      </div>
+      <div>
+        <p class="text-res text-xl font-poppins font-bold" [routerLink]="['/signup']"> Registrarse</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
