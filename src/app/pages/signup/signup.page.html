@@ -1,13 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-buttons slot="fixed" vertical="top" horizontal="start">
+    <ion-back-button defaultHref="/landing"></ion-back-button>
+  </ion-buttons>
+  <ion-img src="assets/duodo.png" />
+  <div>
+    <div class="mt-4">
+      <h1 class="text-3xl text-center font-poppins font-bold">Crea tu perfil</h1>
+      <form action="" class="space-y-7 mt-8">
+        <div class="ml-5">
+          <ion-item class="rounded-xl w-80 left-5" color="medium">
+            <ion-input
+              type="text"
+              placeholder="Nombre"
+              class="text-xl font-poppins font-medium"
+            >
+            </ion-input>
+          </ion-item>
+        </div>
+        <div class="ml-5">
+          <ion-item class="rounded-xl w-80 left-5" color="medium">
+            <ion-input
+              type="text"
+              placeholder="Apellidos"
+              class="text-xl font-poppins font-medium"
+            >
+            </ion-input>
+          </ion-item>
+        </div>
+        <div class="ml-5">
+          <ion-item class="rounded-xl w-80 left-5" color="medium">
+            <ion-input
+              type="email"
+              placeholder="Correo electrónico"
+              class="text-xl font-poppins font-medium"
+            >
+            </ion-input>
+          </ion-item>
+        </div>
+        <div class="ml-5">
+          <ion-item class="rounded-xl w-80 left-5" color="medium">
+            <ion-input
+              type="password"
+              placeholder="Contraseña"
+              class="text-xl font-poppins font-medium"
+            >
+            </ion-input>
+          </ion-item>
+        </div>
+      </form>
+      <div class="flex justify-center mt-20">
+        <ion-text [routerLink]="['/home']">
+          <p class="text-center text-xl font-poppins font-bold bg-indigo-500 p-4 rounded-3xl w-64">Crear cuenta</p>
+        </ion-text>
+      </div>
+    </div>
+  </div>
 </ion-content>
+
+

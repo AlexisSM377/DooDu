@@ -5,53 +5,66 @@
   <ion-img src="assets/duodo.png" />
   <div>
     <div class="mt-8">
-      <h1 class="text-3xl text-center font-poppins font-bold">Iniciar sesión</h1>
-      <form action="" class="space-y-8 mt-14">
-        <div class="ml-9">
-          <label slot="label" class="font-poppins text-xl ">Correo electrónico</label   >
-          <ion-item class="rounded-2xl w-80" color="medium">
+      <h1 class="text-3xl text-center font-poppins font-bold">
+        Iniciar sesión
+      </h1>
+      <form action="" class="space-y-8 mt-14 flex-col justify-center">
+        <div class="ml-5">
+          <ion-item class="rounded-xl w-80 left-5" color="medium">
             <ion-input
               type="email"
-              labelPlacement="floating"
-              placeholder="john.doe@company.com"
-              class="text-xl"
+              placeholder="Correo electrónico"
+              class="text-xl font-poppins font-medium"
             >
             </ion-input>
           </ion-item>
         </div>
-        <div class="ml-9">
-          <label slot="label" class="font-poppins text-xl ">Contraseña</label   >
-          <ion-item class="rounded-2xl w-80" color="medium">
+        <div class="ml-5">
+          <ion-item class="rounded-xl w-80 left-5" color="medium">
             <ion-input
               type="password"
-              labelPlacement="floating"
-              placeholder="•••••••••"
-              class="text-xl"
+              placeholder="Contraseña"
+              class="text-xl font-poppins font-medium"
             >
             </ion-input>
           </ion-item>
           <ion-grid>
-            <ion-row class="ion-justify-content-end">
-              <ion-col size="9"><span>
-                <ion-text class="text-color text-lg font-poppins font-semibold" [routerLink]="['/reset-password']"> ¿Olvidaste tu contraseña?</ion-text>
-              </span></ion-col>
+            <ion-row class="ion-justify-content-end ml-28">
+              <ion-col size-lg="4" size-md="4" size-sm="4" size="7">
+                <span>
+                  <ion-text
+                    class="text-color text-lg font-poppins font-semibold"
+                    [routerLink]="['/reset-password']"
+                    >¿Olvidaste tu contraseña?</ion-text
+                  >
+                </span>
+              </ion-col>
             </ion-row>
           </ion-grid>
         </div>
       </form>
       <div class="flex justify-center mt-24">
         <ion-text [routerLink]="['/home']">
-          <p class="text-center text-3xl font-poppins font-bold bg-indigo-500 p-4 rounded-3xl w-64">Iniciar</p>
+          <p
+            class="text-center text-3xl font-poppins font-bold bg-indigo-500 p-4 rounded-3xl w-64"
+          >
+            Iniciar
+          </p>
         </ion-text>
       </div>
       <div class="flex justify-center mt-4 space-x-2">
         <div>
           <ion-text class="text-xl font-poppins font-medium">
-            ¿No tienes cuenta? 
+            ¿No tienes cuenta?
           </ion-text>
         </div>
         <div>
-          <p class="text-color text-xl font-poppins font-bold" [routerLink]="['/signup']"> Registrate</p>
+          <p
+            class="text-color text-xl font-poppins font-bold"
+            [routerLink]="['/signup']"
+          >
+            Registrate
+          </p>
         </div>
       </div>
     </div>
