@@ -1,11 +1,24 @@
 <ion-content>
-  <div class="mt-16 flex-col justify-center align-middle">
-    <h1 class="text-3xl text-center font-poppins font-bold">
-      Tareas
-    </h1>
-    <p class="text-center text-wrap font-sans font-normal mt-5 text-xl">
-      AQUI VA EL CONTENIDO
-    </p>
+  <div class="flex space-y-1 ml-8 mt-10 align-middle sm:ml-4 sm:mt-5">
+    <ion-text>
+      <span class="text-xl font-poppins font-semibold sm:text-lg"
+        >Alexis Sovera Mireles</span
+      ><br />
+      <span class="opacity-50 text-lg font-poppins font-medium sm:text-base"
+        >Desarrollador Web</span
+      >
+    </ion-text>
+    <div class="relative h-20 w-24 sm:h-16 sm:w-20">
+      <a
+        href="#"
+        class="absolute -top-1 left-full right-0 h-12 w-12 flex justify-center align-middle items-center task-bg rounded-2xl sm:h-10 sm:w-10"
+      >
+        <ion-icon name="notifications" class="text-3xl text-black sm:text-2xl"></ion-icon>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col mt-8 ml-8 max-w-lg h-52 sm:mt-6 sm:ml-4 sm:max-w-md sm:h-48">
+    <h1 class="text-2xl font-poppins font-semibold sm:text-xl">En progreso</h1>
+    <app-slide [slides]="slides" ></app-slide>
   </div>
 </ion-content>
-

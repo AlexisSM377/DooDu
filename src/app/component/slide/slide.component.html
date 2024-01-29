@@ -1,0 +1,39 @@
+<div *ngIf="slides.length > 0">
+  <swiper-container 
+    [modules]="swiperModules"
+    [slidesPerView]="1.4"
+    >
+    <swiper-slide *ngFor="let slide of slides">
+      <div
+        class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-64 h-[180px] mt-3 rounded-2xl sm:w-56 pt-1">
+        <div class="ml-6 mt-6 space-y-2 sm:ml-4 sm:mt-4 sm:space-y-1">
+          <div class="flex items-center">
+            <h1
+              class="font-poppins font-bold text-white sm:text-base">
+              {{ slide?.title }}
+            </h1>
+            <div>
+              <p class="font-poppins text-white opacity-70 pl-16">{{ getCurrentTime() }}</p>
+            </div>
+          </div>
+
+          <img
+            [src]="slide?.imageUrl"
+            alt="photo"
+            class="w-16 h-16 rounded-full sm:w-12 sm:h-12"
+          />
+  
+          <div class="w-52 bg-gray-200 rounded-full dark:bg-gray-700 sm:w-48">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-lg font-poppins font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+              style="width: 70%"
+            >
+              {{ slide?.porcentage }}%
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
+
