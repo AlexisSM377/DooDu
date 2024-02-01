@@ -16,10 +16,6 @@ const routes: Routes = [
         path: 'tab2-task',
         loadChildren: () => import('./tab2-task/tab2-task.module').then( m => m.Tab2TaskPageModule)
       },
-      // {
-      //   path: 'tab3-add',
-      //   loadChildren: () => import('./tab3-add/tab3-add.module').then( m => m.Tab3AddPageModule)
-      // },
       {
         path: 'tab4-chat',
         loadChildren: () => import('./tab4-chat/tab4-chat.module').then( m => m.Tab4ChatPageModule)

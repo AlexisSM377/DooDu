@@ -5,4 +5,9 @@
 .bg-progress {
     background-color: #725d36;
 }
+.gradi{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
